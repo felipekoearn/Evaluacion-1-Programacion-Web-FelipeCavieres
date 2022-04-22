@@ -1,0 +1,138 @@
+*{              /* este el margen por defecto de las paginas  */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{ /*este es el color de fondo y el tipo de letra de las paginas */
+    background: rgb(66, 151, 201);
+    font-family:Calibri;
+}
+
+.menu{ /*esta son los margenes que tendra la barra de navegacion*/
+    width: 900px;
+    margin: 0 auto;
+}
+
+header{ /*este son el color, el ancho y una tabla por defecto para ordenar el menu */
+    font-size: 15px;
+    background: rgb(46, 43, 43);
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table;
+
+}
+header img{ /*este es el logo del header*/
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{ /* ordene los margenes por defectos de la barra de navegacion y los links de la paginas */
+    position: relative;
+    list-style: none;
+    margin-left: 75px;
+    float: left;
+    padding: 20px 0
+}
+nav ul li a{
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    
+}
+nav ul li a::before{ /* llame antes de la clas nav para darle los parametros de decoracion, antes que llegue a los margenes  */
+    display: block;
+    content: "";
+    width: 0%;
+    background: rgb(192, 185, 185);
+    height: 5px;
+    top: 0%;
+    position: absolute;
+    transition:width 0.2s;
+}
+
+nav ul li a:hover::before{/*selecione a (nav u li a ) para darle un ancho por defecto antes de la otra entrada*/
+    width: 100%;
+}
+
+.Titulo{ /* decoracion color, borde, margenes que tendran todos los titulos de las paginas */
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+.Titulo2{ /*decoracion, color,borde, margenes de todos los subtitulos de la pagina */
+    font-size: 15px;
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.descripcion{ /*decoracion, letra, color, tamaño de letra de las descripciones de las paginas */
+    font-family:Calibri;
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 15px;
+    white-space: nowrap;
+    
+}
+.Lenguajes{ /*decoracion, color,margen, negrita, de los lenguajes de programacion*/
+    font-family:Calibri;
+    font-size: 15px;
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.formulario{/*decoracion, color, borde, margenes del formulario */
+    font-family:Calibri;
+    font-size: 15px;
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+}
+
+section{ /*decoracion, color, borde, margen, tamaño de letra de la seccion proyectos*/
+    text-decoration: none;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 15px;
+}
+
+/*esta es la decoracion general que tiene el footer para centralizarlo y dejarlo del color negro, con un margen y centralizado */
+footer{
+    background-color:rgb(46, 43, 43);
+    margin-top: 350px; 
+}
+
+footer .tituloseccion{
+    font-family:Calibri;
+    font-size: 15px;
+    color: azure;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer .copy{
+    font-family:Calibri;
+    font-size: 15px;
+    color: azure;
+    text-align: center;
+    margin-top: 10px;
+}
